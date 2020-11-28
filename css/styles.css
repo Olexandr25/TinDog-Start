@@ -1,21 +1,20 @@
 body{
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat-bold, sans-serif;
+    text-align: center;
 }
 
-#title {
-    background-color: #ff4c68;
-    color: #fff;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+p {
+    color: #8f8f8f;
 }
 
 .container-fluid {
-    padding: 3% 15%;
-}
-
-h1 {
-    font-family: Montserrat-Black, sans-serif;
-    font-size: 3.5rem;
-    font-weight: bold;
-    line-height: 1.5;
+    padding: 7% 15%;
 }
 
 /*Navigation Bar*/
@@ -44,22 +43,38 @@ h1 {
     margin: 5% 3% 5% 0;
 }
 
+/*Tittle section*/
+#title {
+    background-color: #ff4c68;
+    color: #fff;
+    text-align: left;
+}
+
+.title-text {
+    font-size: 3.5rem;
+}
+
+#title .container-fluid {
+    padding: 3% 15% 7% ;
+}
+
 /*Tittle Image*/
 .tittle-image {
-    width: 60%;
-    transform: rotate(45deg);
+    width: 70%;
+    transform: rotate(25deg);
     position: relative;
     top: 50px;
-    left: 100px;
+    left: 30%;
+
 }
 
 /*Features*/
 #features {
-    padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
 }
 
 .feature-box {
-    text-align: center;
     padding: 5%;
 }
 
@@ -72,13 +87,98 @@ h1 {
     color: #ff4c68;
 }
 
-h3 {
-    font-family: Montserrat-bold, sans-serif;
-    font-weight: bold;
+/*Testimonial section*/
+#testimonials {
+    background-color: #ef8172;
+    color: #fff;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+}
+
+.testimonail-img {
+    width: 20%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+/*Press section*/
+#press {
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 15px;
+}
+
+/*Pricing section*/
+#pricing {
+    padding: 100px;
+}
+
+.price-text {
+    font-size: 3rem;
+}
+
+.pricing-text {
     font-size: 1.5rem;
 }
 
-p {
-    font-family: Montserrat, sans-serif;
+.pricing-column {
+    padding: 3% 2%;
+}
+
+/*Call to Action - section*/
+#cta {
+    background-color: #ff4c68;
+    color: #fff;
+
+}
+
+.cta {
+    padding: 10% 15%;
+    line-height: 1.5;
+}
+
+.cta-text {
+    font-family: Montserrat-Black, sans-serif;
+    font-size: 4rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+/*Footer section*/
+#footer {
+    background-color: #fff;
+}
+
+.footer-logo {
+    color: black;
+    margin: 10px 20px 20px;
+
+}
+
+.footer-text {
     color: #8f8f8f;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+}
+
+.download-button-footer {
+    margin: 7% 3% 1% 0;
+}
+
+/*Media section*/
+@media (max-width: 1118px) {
+    .tittle-image {
+        position: static;
+        transform: rotate(0);
+    }
+
+    #title {
+        text-align: center;
+    }
 }
